@@ -61,3 +61,12 @@ table {
   width:100%;
   text-align:left;
 }
+
+.resultado-valido, .resultado-invalido {
+  background-color: green;
+  padding: 10px 20px;
+}
+
+.resultado-invalido {
+  background-color: red;
+}
