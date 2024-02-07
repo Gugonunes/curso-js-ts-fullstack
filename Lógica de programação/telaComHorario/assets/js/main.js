@@ -91,5 +91,10 @@ function formataMes (mes) {
 }
 
 function formataHoraMinSeg (data) {
-  return `${data.getHours()}` + ':' + `${data.getMinutes()}`;
+  let horas = data.getHours();
+  let minutos = data.getMinutes();
+
+  horas = horas >= 10 ? horas : `0${horas}`;
+  minutos = minutos >=10 ? minutos : `0${minutos}`;
+  return horas + ':' + minutos;
 }
