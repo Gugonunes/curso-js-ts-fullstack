@@ -16,3 +16,18 @@ const numerosEmArray = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
 const [ , [ , , seis]] = numerosEmArray;
 
 console.log(seis)
+
+// atribuiçao via desestruturaçao para objetos
+
+const pessoa = {
+  nome: 'gustavo',
+  idade: 23,
+  endereco: {
+    rua: 'av brasil',
+    numero: 320,
+  }
+}
+
+const { nome, idade, endereco: {rua, numero} } = pessoa;
+
+console.log(nome, idade, rua, numero)
